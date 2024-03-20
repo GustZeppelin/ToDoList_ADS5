@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>To-Do list</title>
 </head>
 <body>
@@ -23,18 +23,20 @@
             <div class="task">
                 <input type="checkbox" name="progress" class="progress">
 
-                <p>description</p>
+                <p class="task-description">
+                    description
+                </p>
 
-                <div>
-                    <a href="">
+                <div class="task-actions">
+                    <a class="action-button edit-button">
                         <i class="fa-regular fa-pen-to-square"></i>
                     </a>
 
-                    <a href="">
+                    <a class="action-button delete-button">
                         <i class="fa-regular fa-trash-can"></i>
                     </a>
                 </div>
-                <form action="" class="to-do-form edit-task" hidden>
+                <form action="" class="to-do-form edit-task hidden">
                     <input type="text" name="description" placeholder="Edit your task here">
                     <button type="submit" class="form-button confirm-button">
                         <i class="fa-solid fa-check"></i>

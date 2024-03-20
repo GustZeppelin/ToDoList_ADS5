@@ -27,7 +27,7 @@ body {
     width: 430px;
 }
 
-#to-do h1 {
+#to_do h1 {
     color: #e5f9ff;
     font-size: 28px;
     text-transform: uppercase;
@@ -79,10 +79,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #262626;
+    color: #ffffff;
     background-color: #191933;
     padding: 8px 12px;
     border-radius: 4px;
+}
+
+.task .progress {
+    margin-right: 10px
+}
+
+.task .progress.done + .task-description {
+    text-decoration: line-through;
+    color: #e5f9ffa7;
 }
 
 .task .task-description {
